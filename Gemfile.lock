@@ -3,7 +3,13 @@ GEM
   specs:
     daemons (1.4.1)
     eventmachine (1.2.7)
+    faraday (2.0.0.alpha.pre.3)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (2.0.0.alpha.pre.2)
+      faraday (~> 2.0.0.alpha.pre.2)
     multi_json (1.15.0)
+    multipart-post (2.1.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     rack (2.2.3)
@@ -35,6 +41,8 @@ PLATFORMS
   x86_64-darwin-18
 
 DEPENDENCIES
+  faraday (= 2.0.0.alpha.pre.3)
+  faraday-net_http (= 2.0.0.alpha.pre.2)
   sinatra
   sinatra-contrib
   slim
